@@ -1,0 +1,301 @@
+nim,nama,matakuliah,nilai,grade
+24010001,Dewi Pratama,Struktur Data,80,B
+24010002,Hana Wijaya,Matematika Diskrit,55,C
+24010003,Tono Santoso,Jaringan Komputer,83,B
+24010004,Budi Pratama,Matematika Diskrit,67,C
+24010005,Hana Nugroho,Jaringan Komputer,53,D
+24010006,Tono Lestari,Jaringan Komputer,41,D
+24010007,Hana Permata,Jaringan Komputer,66,C
+24010008,Andi Wijaya,Basis Data,57,C
+24010009,Indra Wijaya,Algoritma,61,C
+24010010,Kartika Santoso,Matematika Diskrit,88,A
+24010011,Dewi Hidayat,Struktur Data,64,C
+24010012,Indra Pratama,Basis Data,78,B
+24010013,Dewi Kusuma,Matematika Diskrit,74,B
+24010014,Joko Rahayu,Struktur Data,75,B
+24010015,Gita Santoso,Matematika Diskrit,76,B
+24010016,Hana Saputra,Matematika Diskrit,82,B
+24010017,Hana Santoso,Basis Data,94,A
+24010018,Putra Hidayat,Algoritma,57,C
+24010019,Lina Lestari,Struktur Data,63,C
+24010020,Citra Rahayu,Algoritma,84,B
+24010021,Hana Wijaya,Basis Data,74,B
+24010022,Indra Nugroho,Algoritma,64,C
+24010023,Kartika Pratama,Algoritma,83,B
+24010024,Budi Hidayat,Basis Data,92,A
+24010025,Citra Lestari,Jaringan Komputer,57,C
+24010026,Kartika Lestari,Basis Data,96,A
+24010027,Putra Wijaya,Struktur Data,65,C
+24010028,Hana Nugroho,Jaringan Komputer,48,D
+24010029,Umar Kusuma,Jaringan Komputer,56,C
+24010030,Lina Lestari,Algoritma,65,C
+24010031,Rina Santoso,Matematika Diskrit,72,B
+24010032,Dewi Wijaya,Algoritma,95,A
+24010033,Nina Rahayu,Matematika Diskrit,90,A
+24010034,Made Rahayu,Basis Data,64,C
+24010035,Indra Nugroho,Matematika Diskrit,73,B
+24010036,Dewi Nugroho,Struktur Data,83,B
+24010037,Kartika Santoso,Struktur Data,89,A
+24010038,Fajar Permata,Matematika Diskrit,67,C
+24010039,Indra Nugroho,Algoritma,86,A
+24010040,Dewi Saputra,Jaringan Komputer,72,B
+24010041,Gita Wijaya,Struktur Data,78,B
+24010042,Fajar Nugroho,Jaringan Komputer,88,A
+24010043,Andi Rahayu,Struktur Data,98,A
+24010044,Andi Santoso,Struktur Data,71,B
+24010045,Joko Lestari,Matematika Diskrit,96,A
+24010046,Umar Santoso,Matematika Diskrit,55,C
+24010047,Rina Santoso,Jaringan Komputer,86,A
+24010048,Eko Wijaya,Basis Data,89,A
+24010049,Tono Wijaya,Struktur Data,100,A
+24010050,Wati Kusuma,Algoritma,73,B
+24010051,Tono Lestari,Struktur Data,99,A
+24010052,Lina Permata,Jaringan Komputer,65,C
+24010053,Dewi Lestari,Algoritma,68,C
+24010054,Kartika Pratama,Jaringan Komputer,44,D
+24010055,Hana Rahayu,Algoritma,75,B
+24010056,Citra Pratama,Algoritma,40,D
+24010057,Budi Hidayat,Matematika Diskrit,44,D
+24010058,Hana Saputra,Basis Data,72,B
+24010059,Tono Wijaya,Jaringan Komputer,53,D
+24010060,Rina Lestari,Basis Data,76,B
+24010061,Nina Lestari,Matematika Diskrit,91,A
+24010062,Nina Hidayat,Basis Data,46,D
+24010063,Putra Pratama,Matematika Diskrit,66,C
+24010064,Made Hidayat,Matematika Diskrit,43,D
+24010065,Gita Lestari,Jaringan Komputer,55,C
+24010066,Eko Kusuma,Algoritma,68,C
+24010067,Putra Lestari,Matematika Diskrit,57,C
+24010068,Tono Santoso,Matematika Diskrit,68,C
+24010069,Tono Pratama,Matematika Diskrit,81,B
+24010070,Hana Wijaya,Basis Data,99,A
+24010071,Rina Lestari,Basis Data,71,B
+24010072,Budi Wijaya,Basis Data,97,A
+24010073,Made Saputra,Basis Data,40,D
+24010074,Nina Nugroho,Basis Data,58,C
+24010075,Gita Saputra,Algoritma,49,D
+24010076,Umar Nugroho,Matematika Diskrit,43,D
+24010077,Kartika Pratama,Matematika Diskrit,87,A
+24010078,Rina Nugroho,Jaringan Komputer,77,B
+24010079,Budi Nugroho,Matematika Diskrit,50,D
+24010080,Fajar Santoso,Jaringan Komputer,94,A
+24010081,Hana Kusuma,Matematika Diskrit,44,D
+24010082,Umar Lestari,Jaringan Komputer,100,A
+24010083,Budi Rahayu,Matematika Diskrit,78,B
+24010084,Umar Rahayu,Jaringan Komputer,66,C
+24010085,Indra Lestari,Struktur Data,60,C
+24010086,Indra Kusuma,Algoritma,55,C
+24010087,Joko Permata,Struktur Data,82,B
+24010088,Citra Pratama,Basis Data,99,A
+24010089,Umar Santoso,Matematika Diskrit,79,B
+24010090,Gita Nugroho,Struktur Data,74,B
+24010091,Lina Santoso,Algoritma,48,D
+24010092,Joko Wijaya,Basis Data,63,C
+24010093,Tono Saputra,Jaringan Komputer,93,A
+24010094,Sari Pratama,Jaringan Komputer,91,A
+24010095,Dewi Wijaya,Struktur Data,59,C
+24010096,Dewi Nugroho,Algoritma,47,D
+24010097,Joko Rahayu,Algoritma,57,C
+24010098,Kartika Lestari,Struktur Data,85,A
+24010099,Rina Saputra,Matematika Diskrit,72,B
+24010100,Nina Saputra,Matematika Diskrit,45,D
+24010101,Kartika Wijaya,Struktur Data,40,D
+24010102,Putra Nugroho,Basis Data,50,D
+24010103,Andi Santoso,Matematika Diskrit,75,B
+24010104,Eko Nugroho,Matematika Diskrit,100,A
+24010105,Lina Rahayu,Jaringan Komputer,93,A
+24010106,Nina Wijaya,Matematika Diskrit,49,D
+24010107,Lina Pratama,Struktur Data,59,C
+24010108,Hana Santoso,Struktur Data,53,D
+24010109,Tono Kusuma,Jaringan Komputer,89,A
+24010110,Eko Lestari,Algoritma,87,A
+24010111,Fajar Kusuma,Matematika Diskrit,91,A
+24010112,Kartika Kusuma,Algoritma,51,D
+24010113,Fajar Santoso,Basis Data,57,C
+24010114,Budi Permata,Algoritma,95,A
+24010115,Putra Hidayat,Struktur Data,52,D
+24010116,Hana Lestari,Matematika Diskrit,92,A
+24010117,Gita Kusuma,Struktur Data,82,B
+24010118,Citra Saputra,Struktur Data,57,C
+24010119,Sari Kusuma,Jaringan Komputer,81,B
+24010120,Andi Santoso,Struktur Data,61,C
+24010121,Umar Saputra,Matematika Diskrit,51,D
+24010122,Wati Kusuma,Struktur Data,46,D
+24010123,Kartika Kusuma,Jaringan Komputer,86,A
+24010124,Dewi Kusuma,Jaringan Komputer,72,B
+24010125,Indra Pratama,Basis Data,52,D
+24010126,Sari Nugroho,Algoritma,40,D
+24010127,Nina Santoso,Struktur Data,63,C
+24010128,Kartika Santoso,Struktur Data,79,B
+24010129,Joko Kusuma,Struktur Data,72,B
+24010130,Joko Nugroho,Algoritma,65,C
+24010131,Nina Kusuma,Algoritma,52,D
+24010132,Umar Saputra,Basis Data,79,B
+24010133,Andi Saputra,Struktur Data,75,B
+24010134,Nina Rahayu,Jaringan Komputer,53,D
+24010135,Kartika Permata,Basis Data,81,B
+24010136,Gita Nugroho,Basis Data,68,C
+24010137,Fajar Santoso,Struktur Data,90,A
+24010138,Wati Hidayat,Matematika Diskrit,72,B
+24010139,Hana Saputra,Algoritma,92,A
+24010140,Gita Wijaya,Matematika Diskrit,91,A
+24010141,Hana Permata,Jaringan Komputer,42,D
+24010142,Citra Permata,Basis Data,94,A
+24010143,Umar Lestari,Basis Data,96,A
+24010144,Made Lestari,Algoritma,71,B
+24010145,Andi Santoso,Basis Data,81,B
+24010146,Fajar Nugroho,Basis Data,54,D
+24010147,Tono Lestari,Matematika Diskrit,43,D
+24010148,Eko Permata,Jaringan Komputer,69,C
+24010149,Wati Hidayat,Basis Data,75,B
+24010150,Sari Kusuma,Jaringan Komputer,79,B
+24010151,Fajar Permata,Basis Data,68,C
+24010152,Hana Saputra,Jaringan Komputer,56,C
+24010153,Hana Saputra,Basis Data,71,B
+24010154,Joko Lestari,Struktur Data,44,D
+24010155,Kartika Nugroho,Matematika Diskrit,61,C
+24010156,Eko Lestari,Basis Data,48,D
+24010157,Eko Lestari,Matematika Diskrit,84,B
+24010158,Nina Hidayat,Jaringan Komputer,66,C
+24010159,Nina Pratama,Algoritma,69,C
+24010160,Nina Kusuma,Jaringan Komputer,93,A
+24010161,Andi Rahayu,Basis Data,100,A
+24010162,Andi Hidayat,Struktur Data,70,B
+24010163,Made Kusuma,Jaringan Komputer,88,A
+24010164,Tono Rahayu,Algoritma,87,A
+24010165,Hana Saputra,Basis Data,71,B
+24010166,Andi Kusuma,Struktur Data,71,B
+24010167,Made Wijaya,Basis Data,82,B
+24010168,Eko Rahayu,Jaringan Komputer,98,A
+24010169,Made Rahayu,Jaringan Komputer,41,D
+24010170,Andi Santoso,Basis Data,82,B
+24010171,Putra Wijaya,Matematika Diskrit,48,D
+24010172,Made Hidayat,Algoritma,56,C
+24010173,Kartika Hidayat,Basis Data,69,C
+24010174,Nina Saputra,Matematika Diskrit,57,C
+24010175,Andi Nugroho,Matematika Diskrit,70,B
+24010176,Lina Lestari,Matematika Diskrit,100,A
+24010177,Budi Pratama,Algoritma,89,A
+24010178,Andi Rahayu,Algoritma,52,D
+24010179,Eko Permata,Matematika Diskrit,55,C
+24010180,Gita Permata,Struktur Data,76,B
+24010181,Lina Wijaya,Jaringan Komputer,89,A
+24010182,Dewi Wijaya,Struktur Data,78,B
+24010183,Umar Pratama,Struktur Data,46,D
+24010184,Made Kusuma,Algoritma,76,B
+24010185,Umar Lestari,Matematika Diskrit,44,D
+24010186,Joko Rahayu,Matematika Diskrit,84,B
+24010187,Umar Pratama,Struktur Data,90,A
+24010188,Nina Hidayat,Matematika Diskrit,74,B
+24010189,Kartika Pratama,Basis Data,72,B
+24010190,Rina Santoso,Basis Data,92,A
+24010191,Putra Wijaya,Basis Data,63,C
+24010192,Sari Saputra,Jaringan Komputer,51,D
+24010193,Tono Permata,Basis Data,91,A
+24010194,Umar Saputra,Struktur Data,67,C
+24010195,Hana Santoso,Struktur Data,94,A
+24010196,Putra Lestari,Basis Data,96,A
+24010197,Wati Kusuma,Struktur Data,76,B
+24010198,Rina Hidayat,Algoritma,41,D
+24010199,Gita Hidayat,Struktur Data,71,B
+24010200,Indra Rahayu,Struktur Data,61,C
+24010201,Andi Nugroho,Algoritma,75,B
+24010202,Hana Kusuma,Basis Data,45,D
+24010203,Hana Permata,Basis Data,75,B
+24010204,Andi Santoso,Struktur Data,68,C
+24010205,Made Lestari,Struktur Data,54,D
+24010206,Umar Hidayat,Basis Data,82,B
+24010207,Sari Hidayat,Basis Data,75,B
+24010208,Tono Hidayat,Struktur Data,87,A
+24010209,Putra Saputra,Struktur Data,84,B
+24010210,Hana Santoso,Algoritma,56,C
+24010211,Dewi Nugroho,Algoritma,60,C
+24010212,Gita Permata,Struktur Data,52,D
+24010213,Umar Nugroho,Jaringan Komputer,86,A
+24010214,Dewi Lestari,Struktur Data,58,C
+24010215,Lina Wijaya,Struktur Data,54,D
+24010216,Tono Wijaya,Struktur Data,40,D
+24010217,Budi Nugroho,Struktur Data,42,D
+24010218,Eko Permata,Matematika Diskrit,84,B
+24010219,Andi Rahayu,Struktur Data,95,A
+24010220,Rina Permata,Struktur Data,70,B
+24010221,Budi Saputra,Basis Data,51,D
+24010222,Citra Kusuma,Basis Data,47,D
+24010223,Umar Pratama,Algoritma,44,D
+24010224,Umar Saputra,Matematika Diskrit,49,D
+24010225,Dewi Nugroho,Basis Data,55,C
+24010226,Wati Rahayu,Algoritma,78,B
+24010227,Sari Kusuma,Basis Data,89,A
+24010228,Putra Saputra,Jaringan Komputer,98,A
+24010229,Joko Rahayu,Jaringan Komputer,67,C
+24010230,Wati Santoso,Algoritma,43,D
+24010231,Gita Saputra,Matematika Diskrit,80,B
+24010232,Hana Wijaya,Jaringan Komputer,50,D
+24010233,Fajar Pratama,Basis Data,44,D
+24010234,Wati Permata,Struktur Data,68,C
+24010235,Hana Saputra,Struktur Data,42,D
+24010236,Putra Santoso,Algoritma,84,B
+24010237,Indra Rahayu,Algoritma,99,A
+24010238,Dewi Nugroho,Algoritma,67,C
+24010239,Eko Saputra,Algoritma,81,B
+24010240,Budi Wijaya,Struktur Data,44,D
+24010241,Umar Saputra,Basis Data,78,B
+24010242,Putra Saputra,Basis Data,47,D
+24010243,Indra Nugroho,Jaringan Komputer,100,A
+24010244,Putra Santoso,Jaringan Komputer,71,B
+24010245,Nina Hidayat,Jaringan Komputer,42,D
+24010246,Andi Santoso,Algoritma,56,C
+24010247,Umar Rahayu,Matematika Diskrit,83,B
+24010248,Indra Rahayu,Matematika Diskrit,88,A
+24010249,Fajar Permata,Jaringan Komputer,88,A
+24010250,Putra Saputra,Algoritma,81,B
+24010251,Nina Permata,Matematika Diskrit,77,B
+24010252,Lina Kusuma,Struktur Data,70,B
+24010253,Dewi Wijaya,Struktur Data,60,C
+24010254,Rina Saputra,Basis Data,66,C
+24010255,Tono Pratama,Basis Data,92,A
+24010256,Kartika Saputra,Struktur Data,45,D
+24010257,Made Nugroho,Matematika Diskrit,47,D
+24010258,Tono Permata,Basis Data,82,B
+24010259,Gita Nugroho,Struktur Data,43,D
+24010260,Rina Permata,Matematika Diskrit,79,B
+24010261,Indra Nugroho,Algoritma,53,D
+24010262,Joko Permata,Basis Data,99,A
+24010263,Andi Rahayu,Algoritma,47,D
+24010264,Fajar Saputra,Jaringan Komputer,85,A
+24010265,Tono Kusuma,Matematika Diskrit,40,D
+24010266,Dewi Permata,Matematika Diskrit,54,D
+24010267,Eko Permata,Struktur Data,81,B
+24010268,Indra Kusuma,Basis Data,72,B
+24010269,Hana Permata,Jaringan Komputer,70,B
+24010270,Made Lestari,Jaringan Komputer,49,D
+24010271,Eko Santoso,Struktur Data,72,B
+24010272,Nina Hidayat,Jaringan Komputer,89,A
+24010273,Andi Saputra,Struktur Data,57,C
+24010274,Umar Rahayu,Basis Data,93,A
+24010275,Eko Permata,Jaringan Komputer,95,A
+24010276,Lina Hidayat,Jaringan Komputer,70,B
+24010277,Tono Kusuma,Basis Data,88,A
+24010278,Kartika Lestari,Algoritma,99,A
+24010279,Made Lestari,Basis Data,76,B
+24010280,Kartika Permata,Basis Data,42,D
+24010281,Eko Permata,Matematika Diskrit,64,C
+24010282,Sari Rahayu,Struktur Data,48,D
+24010283,Dewi Permata,Matematika Diskrit,95,A
+24010284,Putra Pratama,Algoritma,73,B
+24010285,Eko Santoso,Basis Data,66,C
+24010286,Indra Hidayat,Jaringan Komputer,90,A
+24010287,Made Santoso,Struktur Data,84,B
+24010288,Tono Kusuma,Struktur Data,94,A
+24010289,Rina Nugroho,Matematika Diskrit,80,B
+24010290,Citra Lestari,Struktur Data,79,B
+24010291,Citra Kusuma,Matematika Diskrit,54,D
+24010292,Dewi Permata,Algoritma,88,A
+24010293,Joko Pratama,Matematika Diskrit,84,B
+24010294,Budi Saputra,Struktur Data,60,C
+24010295,Nina Wijaya,Algoritma,63,C
+24010296,Nina Rahayu,Algoritma,73,B
+24010297,Fajar Santoso,Jaringan Komputer,50,D
+24010298,Made Rahayu,Algoritma,95,A
+24010299,Umar Wijaya,Algoritma,71,B
+24010300,Indra Permata,Struktur Data,69,C

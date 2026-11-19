@@ -1,0 +1,90 @@
+Kompresi data adalah cara untuk memperkecil ukuran sebuah file tanpa menghilangkan isinya.
+Dengan kompresi, file yang besar dapat disimpan di ruang yang lebih kecil dan dikirim lebih cepat melalui jaringan.
+
+Salah satu algoritma kompresi yang paling terkenal adalah kode Huffman. Algoritma ini ditemukan oleh David Huffman
+pada tahun 1952 ketika ia masih menjadi mahasiswa. Idenya sederhana: karakter yang sering muncul diberi kode yang pendek,
+sedangkan karakter yang jarang muncul diberi kode yang lebih panjang.
+
+Sebagai contoh, dalam teks berbahasa Indonesia huruf a, n, dan i sangat sering muncul, sedangkan huruf q, x, dan z
+hampir tidak pernah dipakai. Jika huruf yang sering muncul memakai sedikit bit, maka total bit yang dibutuhkan
+untuk menyimpan seluruh teks akan berkurang.
+
+Langkah pertama adalah menghitung berapa kali setiap karakter muncul di dalam file. Hasil perhitungan ini disebut
+tabel frekuensi. Langkah kedua adalah membangun pohon biner. Dua simpul dengan frekuensi terkecil diambil,
+digabungkan menjadi satu simpul baru, lalu dimasukkan kembali. Proses ini diulang sampai hanya tersisa satu pohon.
+
+Setelah pohon terbentuk, kode setiap karakter diperoleh dengan menelusuri jalur dari akar menuju daun.
+Bergerak ke kiri berarti menambahkan angka nol, bergerak ke kanan berarti menambahkan angka satu.
+Karena setiap karakter berada di daun, tidak ada kode yang menjadi awalan dari kode lain, sehingga
+hasil kompresi dapat dibaca kembali tanpa kebingungan.
+
+Kompresi Huffman bersifat lossless, artinya data yang dikembalikan sama persis dengan data aslinya.
+Berbeda dengan kompresi lossy seperti pada gambar JPEG atau musik MP3 yang membuang sebagian informasi.
+
+Algoritma ini bekerja sangat baik untuk teks, karena distribusi hurufnya tidak merata.
+Namun untuk file yang sudah terkompresi, misalnya file zip atau gambar jpg, hasilnya hampir tidak mengecil
+karena semua byte muncul dengan frekuensi yang hampir sama.
+
+Matematika diskrit memberikan dasar teori untuk algoritma ini, mulai dari pohon, graf, hingga teori informasi.
+Dengan memahami kode Huffman, kita belajar bagaimana konsep matematika dapat dipakai untuk memecahkan
+masalah nyata dalam dunia komputer.
+Kompresi data adalah cara untuk memperkecil ukuran sebuah file tanpa menghilangkan isinya.
+Dengan kompresi, file yang besar dapat disimpan di ruang yang lebih kecil dan dikirim lebih cepat melalui jaringan.
+
+Salah satu algoritma kompresi yang paling terkenal adalah kode Huffman. Algoritma ini ditemukan oleh David Huffman
+pada tahun 1952 ketika ia masih menjadi mahasiswa. Idenya sederhana: karakter yang sering muncul diberi kode yang pendek,
+sedangkan karakter yang jarang muncul diberi kode yang lebih panjang.
+
+Sebagai contoh, dalam teks berbahasa Indonesia huruf a, n, dan i sangat sering muncul, sedangkan huruf q, x, dan z
+hampir tidak pernah dipakai. Jika huruf yang sering muncul memakai sedikit bit, maka total bit yang dibutuhkan
+untuk menyimpan seluruh teks akan berkurang.
+
+Langkah pertama adalah menghitung berapa kali setiap karakter muncul di dalam file. Hasil perhitungan ini disebut
+tabel frekuensi. Langkah kedua adalah membangun pohon biner. Dua simpul dengan frekuensi terkecil diambil,
+digabungkan menjadi satu simpul baru, lalu dimasukkan kembali. Proses ini diulang sampai hanya tersisa satu pohon.
+
+Setelah pohon terbentuk, kode setiap karakter diperoleh dengan menelusuri jalur dari akar menuju daun.
+Bergerak ke kiri berarti menambahkan angka nol, bergerak ke kanan berarti menambahkan angka satu.
+Karena setiap karakter berada di daun, tidak ada kode yang menjadi awalan dari kode lain, sehingga
+hasil kompresi dapat dibaca kembali tanpa kebingungan.
+
+Kompresi Huffman bersifat lossless, artinya data yang dikembalikan sama persis dengan data aslinya.
+Berbeda dengan kompresi lossy seperti pada gambar JPEG atau musik MP3 yang membuang sebagian informasi.
+
+Algoritma ini bekerja sangat baik untuk teks, karena distribusi hurufnya tidak merata.
+Namun untuk file yang sudah terkompresi, misalnya file zip atau gambar jpg, hasilnya hampir tidak mengecil
+karena semua byte muncul dengan frekuensi yang hampir sama.
+
+Matematika diskrit memberikan dasar teori untuk algoritma ini, mulai dari pohon, graf, hingga teori informasi.
+Dengan memahami kode Huffman, kita belajar bagaimana konsep matematika dapat dipakai untuk memecahkan
+masalah nyata dalam dunia komputer.
+Kompresi data adalah cara untuk memperkecil ukuran sebuah file tanpa menghilangkan isinya.
+Dengan kompresi, file yang besar dapat disimpan di ruang yang lebih kecil dan dikirim lebih cepat melalui jaringan.
+
+Salah satu algoritma kompresi yang paling terkenal adalah kode Huffman. Algoritma ini ditemukan oleh David Huffman
+pada tahun 1952 ketika ia masih menjadi mahasiswa. Idenya sederhana: karakter yang sering muncul diberi kode yang pendek,
+sedangkan karakter yang jarang muncul diberi kode yang lebih panjang.
+
+Sebagai contoh, dalam teks berbahasa Indonesia huruf a, n, dan i sangat sering muncul, sedangkan huruf q, x, dan z
+hampir tidak pernah dipakai. Jika huruf yang sering muncul memakai sedikit bit, maka total bit yang dibutuhkan
+untuk menyimpan seluruh teks akan berkurang.
+
+Langkah pertama adalah menghitung berapa kali setiap karakter muncul di dalam file. Hasil perhitungan ini disebut
+tabel frekuensi. Langkah kedua adalah membangun pohon biner. Dua simpul dengan frekuensi terkecil diambil,
+digabungkan menjadi satu simpul baru, lalu dimasukkan kembali. Proses ini diulang sampai hanya tersisa satu pohon.
+
+Setelah pohon terbentuk, kode setiap karakter diperoleh dengan menelusuri jalur dari akar menuju daun.
+Bergerak ke kiri berarti menambahkan angka nol, bergerak ke kanan berarti menambahkan angka satu.
+Karena setiap karakter berada di daun, tidak ada kode yang menjadi awalan dari kode lain, sehingga
+hasil kompresi dapat dibaca kembali tanpa kebingungan.
+
+Kompresi Huffman bersifat lossless, artinya data yang dikembalikan sama persis dengan data aslinya.
+Berbeda dengan kompresi lossy seperti pada gambar JPEG atau musik MP3 yang membuang sebagian informasi.
+
+Algoritma ini bekerja sangat baik untuk teks, karena distribusi hurufnya tidak merata.
+Namun untuk file yang sudah terkompresi, misalnya file zip atau gambar jpg, hasilnya hampir tidak mengecil
+karena semua byte muncul dengan frekuensi yang hampir sama.
+
+Matematika diskrit memberikan dasar teori untuk algoritma ini, mulai dari pohon, graf, hingga teori informasi.
+Dengan memahami kode Huffman, kita belajar bagaimana konsep matematika dapat dipakai untuk memecahkan
+masalah nyata dalam dunia komputer.

@@ -65,8 +65,10 @@ public class Main {
     }
 
     private static void roundTrip(File a) throws Exception {
-        File huf = new File(a.getPath() + ".huf");
-        File balik = new File(a.getPath() + ".balik");
+        File folder = new File("hasil");
+        folder.mkdirs();
+        File huf = new File(folder, a.getName() + ".huf");
+        File balik = new File(folder, a.getName() + ".balik");
         System.out.println(FileCompressor.compress(a, huf));
         System.out.println(FileCompressor.decompress(huf, balik));
         boolean sama = Arrays.equals(Files.readAllBytes(a.toPath()),
