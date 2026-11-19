@@ -1,9 +1,8 @@
+package huffman.service;
 
-package src.huffman.service;
-
-import src.huffman.core.BitReader;
-import src.huffman.core.BitWriter;
-import src.huffman.core.HuffmanCoder;
+import huffman.core.BitReader;
+import huffman.core.BitWriter;
+import huffman.core.HuffmanCoder;
 import java.io.*;
 
 import java.nio.file.Files;
@@ -32,7 +31,10 @@ public class FileCompressor {
             }
         }
         long headerHuffman = 14 + 9L * count;
-        long ukuranHuffman = headerHuffman + (totalBit + 7) / 8;
+        // Kalau hanya ada 1 jenis byte, dekompresor tidak membaca bit sama sekali,
+        // jadi bit data tidak perlu ditulis.
+        long bitDitulis = (count == 1) ? 0 : totalBit;
+        long ukuranHuffman = headerHuffman + (bitDitulis + 7) / 8;
         long ukuranMentah = 4 + data.length;
         boolean mentah = ukuranMentah <= ukuranHuffman;
 
@@ -52,11 +54,13 @@ public class FileCompressor {
                         out.writeLong(freq[i]);
                     }
                 }
-                BitWriter bw = new BitWriter(out);
-                for (byte b : data) {
-                    bw.write(h.codeOf(b & 0xFF));
+                if (count > 1) {
+                    BitWriter bw = new BitWriter(out);
+                    for (byte b : data) {
+                        bw.write(h.codeOf(b & 0xFF));
+                    }
+                    bw.flush();
                 }
-                bw.flush();
             }
         }
 

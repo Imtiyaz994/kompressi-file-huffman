@@ -1,0 +1,77 @@
+package huffman;
+
+import java.io.File;
+import java.nio.file.Files;
+import java.util.Arrays;
+
+import huffman.service.FileCompressor;
+
+public class Main {
+
+    private static void bantuan() {
+        System.out.println("Pemakaian:");
+        System.out.println("  c <file_asli> <file.huf>      kompres");
+        System.out.println("  d <file.huf> <file_hasil>     dekompres");
+        System.out.println("  t <file_asli>                 uji round trip");
+    }
+
+    private static void gagal(String pesan) {
+        System.err.println("ERROR: " + pesan);
+        System.exit(1);
+    }
+
+    public static void main(String[] args) {
+        if (args.length == 0) {
+            bantuan();
+            return;
+        }
+
+        String mode = args[0];
+        if (!mode.equals("c") && !mode.equals("d") && !mode.equals("t")) {
+            System.err.println("Mode tidak dikenal: " + mode);
+            bantuan();
+            System.exit(1);
+        }
+
+        int perlu = mode.equals("t") ? 2 : 3;
+        if (args.length < perlu) {
+            System.err.println("Argumen kurang untuk mode '" + mode + "'.");
+            bantuan();
+            System.exit(1);
+        }
+
+        try {
+            File a = new File(args[1]);
+            if (!a.isFile()) gagal("File tidak ditemukan: " + a);
+
+            if (mode.equals("t")) {
+                roundTrip(a);
+                return;
+            }
+
+            File b = new File(args[2]);
+            if (a.getCanonicalFile().equals(b.getCanonicalFile())) {
+                gagal("File tujuan tidak boleh sama dengan file asal.");
+            }
+
+            if (mode.equals("c")) {
+                System.out.println(FileCompressor.compress(a, b));
+            } else {
+                System.out.println(FileCompressor.decompress(a, b));
+            }
+        } catch (Exception e) {
+            gagal(e.getMessage() != null ? e.getMessage() : e.toString());
+        }
+    }
+
+    private static void roundTrip(File a) throws Exception {
+        File huf = new File(a.getPath() + ".huf");
+        File balik = new File(a.getPath() + ".balik");
+        System.out.println(FileCompressor.compress(a, huf));
+        System.out.println(FileCompressor.decompress(huf, balik));
+        boolean sama = Arrays.equals(Files.readAllBytes(a.toPath()),
+                                     Files.readAllBytes(balik.toPath()));
+        System.out.println(sama ? "ROUND TRIP: IDENTIK" : "ROUND TRIP: BEDA (ada bug!)");
+        if (!sama) System.exit(2);
+    }
+}

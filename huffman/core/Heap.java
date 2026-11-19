@@ -1,4 +1,4 @@
-package src.huffman.core;
+package huffman.core;
 import java.util.ArrayList;
 
 public class Heap<T extends Comparable<T>>{

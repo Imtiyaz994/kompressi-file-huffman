@@ -1,7 +1,7 @@
-package src.huffman.service;
+package huffman.service;
 
 import java.io.*;
-import src.huffman.core.HuffmanCoder;
+import huffman.core.HuffmanCoder;
 
 public class HufInspector {
 

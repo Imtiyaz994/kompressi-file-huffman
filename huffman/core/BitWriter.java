@@ -1,4 +1,4 @@
-package src.huffman.core;
+package huffman.core;
 import java.io.IOException;
 import java.io.OutputStream;
 

@@ -1,4 +1,4 @@
-package src.huffman.core;
+package huffman.core;
 
 public class HuffmanCoder {
     public static class Node implements Comparable<Node> {

@@ -1,10 +1,10 @@
-package src.huffman.ui;
+package huffman.ui;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
-import src.huffman.service.FileCompressor;
-import src.huffman.service.Hasil;
-import src.huffman.service.HufInspector;
+import huffman.service.FileCompressor;
+import huffman.service.Hasil;
+import huffman.service.HufInspector;
 
 import java.awt.*;
 import java.awt.datatransfer.DataFlavor;

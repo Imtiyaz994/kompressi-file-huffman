@@ -1,4 +1,4 @@
-package src.huffman.service;
+package huffman.service;
 
 public class Hasil {
     public String jenis;            // "Kompres" atau "Dekompres"
