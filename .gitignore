@@ -1,2 +1,5 @@
-test/
+bin/
 *.class
+*.huf
+*.balik
+*.out

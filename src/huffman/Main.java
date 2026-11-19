@@ -1,6 +1,11 @@
+package src.huffman;
 import java.io.File;
 import java.nio.file.Files;
 import java.util.Arrays;
+
+import src.huffman.service.FileCompressor;
+
+
 
 public class Main {
     public static void main(String[] args) throws Exception {

@@ -1,15 +1,17 @@
-class HuffmanCoder {
-    static class Node implements Comparable<Node> {
-        int symbol;
-        long freq;
-        Node left, right;
+package src.huffman.core;
 
-        Node (int symbol, long freq) {
+public class HuffmanCoder {
+    public static class Node implements Comparable<Node> {
+        public int symbol;
+        public long freq;
+        public Node left, right;
+
+        public Node (int symbol, long freq) {
             this.symbol = symbol;
             this.freq = freq;
         }
 
-        boolean isLeaf () { return left == null && right == null; }
+        public boolean isLeaf () { return left == null && right == null; }
 
         @Override
         public int compareTo(Node other) { return Long.compare(freq, other.freq); }
@@ -29,11 +31,11 @@ class HuffmanCoder {
         return f;
     }
 
-    HuffmanCoder(byte[] data) throws Exception {
+    public HuffmanCoder(byte[] data) throws Exception {
         this(countFreq(data));
     }
 
-    HuffmanCoder(long[] freq) throws Exception {
+    public HuffmanCoder(long[] freq) throws Exception {
         this.freq = freq.clone();
         Heap<Node> heap = new Heap<>();
 
@@ -62,7 +64,7 @@ class HuffmanCoder {
         buildCodes(n.right, prefix + "1");
     }
 
-    String codeOf(int symbol) { return codes[symbol]; }
-    Node getRoot() { return root; }
-    long[] getFreq () { return freq.clone();}
+    public String codeOf(int symbol) { return codes[symbol]; }
+    public Node getRoot() { return root; }
+    public long[] getFreq () { return freq.clone();}
 }

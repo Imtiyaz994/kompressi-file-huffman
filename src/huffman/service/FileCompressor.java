@@ -1,0 +1,159 @@
+
+package src.huffman.service;
+
+import src.huffman.core.BitReader;
+import src.huffman.core.BitWriter;
+import src.huffman.core.HuffmanCoder;
+import java.io.*;
+
+import java.nio.file.Files;
+import java.util.Arrays;
+
+
+
+public class FileCompressor {
+    private static final byte[] MAGIC     = {'H', 'U', 'F', '1'};
+    private static final byte[] MAGIC_RAW = {'H', 'U', 'F', '0'};
+
+    public static Hasil compress(File in, File outFile) throws Exception {
+        long start = System.nanoTime();
+        byte[] data = Files.readAllBytes(in.toPath());
+        HuffmanCoder h = new HuffmanCoder(data);
+        long[] freq = h.getFreq();
+
+        int count = 0;
+        long totalBit = 0;
+        String[] kode = new String[256];
+        for (int i = 0; i < 256; i++) {
+            if (freq[i] > 0) {
+                count++;
+                kode[i] = h.codeOf(i);
+                totalBit += freq[i] * kode[i].length();
+            }
+        }
+        long headerHuffman = 14 + 9L * count;
+        long ukuranHuffman = headerHuffman + (totalBit + 7) / 8;
+        long ukuranMentah = 4 + data.length;
+        boolean mentah = ukuranMentah <= ukuranHuffman;
+
+        try (DataOutputStream out = new DataOutputStream(
+                new BufferedOutputStream(new FileOutputStream(outFile)))) {
+
+            if (mentah) {
+                out.write(MAGIC_RAW);
+                out.write(data);
+            } else {
+                out.write(MAGIC);
+                out.writeLong(data.length);
+                out.writeShort(count);
+                for (int i = 0; i < 256; i++) {
+                    if (freq[i] > 0) {
+                        out.writeByte(i);
+                        out.writeLong(freq[i]);
+                    }
+                }
+                BitWriter bw = new BitWriter(out);
+                for (byte b : data) {
+                    bw.write(h.codeOf(b & 0xFF));
+                }
+                bw.flush();
+            }
+        }
+
+        Hasil r = new Hasil();
+        r.jenis = "Kompres";
+        r.mentah = mentah;
+        r.mode = mentah ? "HUF0 (mentah)" : "HUF1 (Huffman)";
+        r.awal = in.length();
+        r.akhir = outFile.length();
+        r.ms = (System.nanoTime() - start) / 1_000_000;
+        r.panjangAsli = data.length;
+        r.jumlahSimbol = count;
+        r.totalBit = totalBit;
+        r.headerByte = mentah ? 4 : headerHuffman;
+        r.freq = freq;
+        r.kode = kode;
+        r.entropi = Hasil.hitungEntropi(freq, data.length);
+        return r;
+    }
+
+    public static Hasil decompress(File in, File outFile) throws Exception {
+        long start = System.nanoTime();
+        Hasil r = new Hasil();
+        r.jenis = "Dekompres";
+
+        try (DataInputStream din = new DataInputStream(
+                new BufferedInputStream(new FileInputStream(in)));
+             BufferedOutputStream out = new BufferedOutputStream(
+                new FileOutputStream(outFile))) {
+
+            byte[] magic = new byte[4];
+            din.readFully(magic);
+
+            if (Arrays.equals(magic, MAGIC_RAW)) {
+                din.transferTo(out);
+                r.mentah = true;
+                r.mode = "HUF0 (mentah)";
+                r.headerByte = 4;
+
+            } else if (Arrays.equals(magic, MAGIC)) {
+                long length = din.readLong();
+                int count = din.readShort();
+                long[] freq = new long[256];
+                for (int i = 0; i < count; i++) {
+                    int sym = din.readUnsignedByte();
+                    freq[sym] = din.readLong();
+                }
+
+                HuffmanCoder h = new HuffmanCoder(freq);
+                HuffmanCoder.Node root = h.getRoot();
+
+                if (length > 0) {
+                    if (root.isLeaf()) {
+                        for (long i = 0; i < length; i++) out.write(root.symbol);
+                    } else {
+                        BitReader br = new BitReader(din);
+                        HuffmanCoder.Node node = root;
+                        long written = 0;
+                        while (written < length) {
+                            int bit = br.readBit();
+                            if (bit == -1) throw new IOException("Data rusak: bit habis terlalu cepat");
+                            node = (bit == 0) ? node.left : node.right;
+                            if (node.isLeaf()) {
+                                out.write(node.symbol);
+                                written++;
+                                node = root;
+                            }
+                        }
+                    }
+                }
+
+                String[] kode = new String[256];
+                long totalBit = 0;
+                for (int i = 0; i < 256; i++) {
+                    if (freq[i] > 0) {
+                        kode[i] = h.codeOf(i);
+                        totalBit += freq[i] * kode[i].length();
+                    }
+                }
+                r.mode = "HUF1 (Huffman)";
+                r.freq = freq;
+                r.kode = kode;
+                r.totalBit = totalBit;
+                r.jumlahSimbol = count;
+                r.headerByte = 14 + 9L * count;
+                r.panjangAsli = length;
+                r.entropi = Hasil.hitungEntropi(freq, length);
+
+            } else {
+                throw new IOException("Bukan file .huf yang valid");
+            }
+        }
+
+        r.awal = in.length();
+        r.akhir = outFile.length();
+        r.ms = (System.nanoTime() - start) / 1_000_000;
+        if (r.mentah) r.panjangAsli = r.akhir;
+        return r;
+    }
+}
